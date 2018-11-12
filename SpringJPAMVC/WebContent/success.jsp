@@ -7,17 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="dodelete">
-<table>
-<tr>
-<td>Employee Id</td>
-<td><input type="text" name="eid"/></td>
-</tr>
-<tr>
-<td><input type="submit" value="Delete Employeee"/></td>
-</tr>
-</table>
-
-</form>
+Data deleted....
 </body>
 </html>

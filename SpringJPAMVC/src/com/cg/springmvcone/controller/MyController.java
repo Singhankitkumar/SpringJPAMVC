@@ -74,13 +74,14 @@ public class MyController {
 
 	}
 	@RequestMapping(value="delete",method=RequestMethod.GET)
+	public String deleteEmployee(){
+		return "deleteemployee";
+	}
+	
+	@RequestMapping(value="dodelete",method=RequestMethod.GET)
 	public String employeeDelete(@RequestParam("eid") int id){
-
 		employeeservice.deleteEmployee(id);
 		return "success";
-
-
-
 	}
 
 

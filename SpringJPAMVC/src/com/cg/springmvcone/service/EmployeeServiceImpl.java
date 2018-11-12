@@ -30,7 +30,7 @@ public class EmployeeServiceImpl implements IEmployeeService{
 
 	@Override
 	public void deleteEmployee(int empId) {
-		// TODO Auto-generated method stub
+		 employeedao.deleteEmployee(empId);
 		
 	}
 

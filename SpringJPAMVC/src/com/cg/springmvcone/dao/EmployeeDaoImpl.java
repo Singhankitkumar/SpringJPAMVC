@@ -31,7 +31,7 @@ public class EmployeeDaoImpl implements IEmployeeDao {
 
 	@Override
 	public void deleteEmployee(int empId) {
-		Query queryTwo=entitymanager.createQuery("DELETE FROM Employee" + "WHERE empId=:eid");
+		Query queryTwo=entitymanager.createQuery("DELETE FROM Employee WHERE empId=:eid");
 		queryTwo.setParameter("eid",empId);
 		queryTwo.executeUpdate();
 	}
