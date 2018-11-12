@@ -45,7 +45,7 @@ public class MyController {
 
 
 	@RequestMapping(value="insertdata",method=RequestMethod.POST)
-	public ModelAndView insertEmployee(@Valid@ModelAttribute("my") Employee emp,
+	public ModelAndView insertEmployee(@Valid @ModelAttribute("my") Employee emp,
 			BindingResult result,Map<String,Object> model){
 
 		int id=0;
@@ -60,7 +60,7 @@ public class MyController {
 
 			id=employeeservice.addEmployeeData(emp);
 		}
-		return new ModelAndView("success","edata",id);
+		return new ModelAndView("sucess","edata",id);
 
 	}
 

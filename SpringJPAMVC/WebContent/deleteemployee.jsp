@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="dodelete">
+<form action="delete">
 <table>
 <tr>
 <td>Employee Id</td>

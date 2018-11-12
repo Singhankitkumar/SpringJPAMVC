@@ -7,8 +7,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.NotEmpty;
+
+
 
 @Entity
 @Table(name="employeemanagement")
@@ -23,29 +26,30 @@ public class Employee {
 	
 	@Column(name="emp_name")
 	@NotEmpty(message="Name should not be empty")
-	private String empNamer;
+	private String empName;
 	@Column(name="emp_deg")
 	
 	private String empDesignation;
 	
 	@Column(name="emp_sal")
-	@NotEmpty(message="Salary should not be blank")
+	@NotNull(message="Salary should not be blank")
 	private Double empSalary;
 	
 	
 	@Column(name="emp_gen")
 	private String empGender;
+	
 	public int getEmpId() {
 		return empId;
 	}
 	public void setEmpId(Integer empId) {
 		this.empId = empId;
 	}
-	public String getEmpNamer() {
-		return empNamer;
+	public String getEmpName() {
+		return empName;
 	}
-	public void setEmpNamer(String empNamer) {
-		this.empNamer = empNamer;
+	public void setEmpName(String empName) {
+		this.empName = empName;
 	}
 	public String getEmpDesignation() {
 		return empDesignation;
@@ -56,7 +60,7 @@ public class Employee {
 	public Double getEmpSalary() {
 		return empSalary;
 	}
-	public void setEmpSalary(double empSalary) {
+	public void setEmpSalary(Double empSalary) {
 		this.empSalary = empSalary;
 	}
 	public String getEmpGender() {
@@ -67,9 +71,14 @@ public class Employee {
 	}
 	@Override
 	public String toString() {
-		return "Employee [empId=" + empId + ", empNamer=" + empNamer
+		return "Employee [empId=" + empId + ", empName=" + empName
 				+ ", empDesignation=" + empDesignation + ", empSalary="
 				+ empSalary + ", empGender=" + empGender + "]";
 	}
+	public Employee() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
 
 }

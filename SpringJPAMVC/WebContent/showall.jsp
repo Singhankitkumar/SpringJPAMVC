@@ -20,7 +20,7 @@
 <tr>
 <td>${emp.empId}</td>
 <td>${emp.empName}</td>
-<td>${emp.empDegnation}</td>
+<td>${emp.empDesignation}</td>
 <td>${emp.empSalary}</td>
 <td>${emp.empGender}</td>
 </tr>

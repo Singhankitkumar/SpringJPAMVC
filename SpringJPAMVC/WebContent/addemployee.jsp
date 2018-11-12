@@ -28,14 +28,14 @@
 </tr>
 
 <tr>
-<td>Employee Degignation</td>
-<td><for:select path="empDegnation" items="${deg}"/></td>
+<td>Employee Designation</td>
+<td><for:select path="empDesignation" items="${deg}"/></td>
 </tr>
 
 <tr>
 <td>Employee Gender</td>
 <td><for:radiobutton path="empGender" value="male"/>Male</td>
-<td><for:radiobutton path="empGender" value="female"/>FeMale</td>
+<td><for:radiobutton path="empGender" value="female"/>Female</td>
 </tr>
 <tr>
 <td><input type="submit" value="Add Employee"></input></td>
